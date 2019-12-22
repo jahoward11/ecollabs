@@ -13,9 +13,9 @@
   <option value="pouchput">&#x25c0; CouchDB: Export "doc" to database</option -->
 </select>
 </div>
-<div id="entries"></div>
-  <script id="entries-template" type="text/x-handlebars-template">
-    {{#each entries}}
+<div id="projects"></div>
+  <script id="projects-template" type="text/x-handlebars-template">
+    {{#each projects}}
     <div class="box">
       <article class="media">
         <div class="media-left">
@@ -27,8 +27,8 @@
           <div class="content">
             <p>
               <strong>{{_id}}</strong>
-              <br /> {{desc_short}}
-              <br /> {{desc_extd}}
+              <br /> {{descr_short}}
+              <br /> {{descr_extd}}
             </p>
           </div>
         </div>
@@ -38,5 +38,7 @@
   </script>
   <!-- script src="https://cdn.appid.cloud.ibm.com/appid-0.3.0.min.js"></script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type='text/javascript' src="eco-ctrl.js"></script>
 </body>
 </html>
