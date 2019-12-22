@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Ecollabs 0.1</title>
+  <meta charset='utf-8' />
+  <meta name='viewport' content="width=device-width, initial-scale=1, user-scalable=yes" />
+</head>
+<body>
+<div>
+<select id="prjlist">
+  <option value=""></option>
+  <!-- option value="import">&#x25ba; Import text/data</option>
+  <option value="pouchput">&#x25c0; CouchDB: Export "doc" to database</option -->
+</select>
+</div>
+<div id="entries"></div>
+  <script id="entries-template" type="text/x-handlebars-template">
+    {{#each entries}}
+    <div class="box">
+      <article class="media">
+        <div class="media-left">
+          <figure class="image is-64x64">
+            <img src="{{icon}}" alt="No Image">
+          </figure>
+        </div>
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>{{_id}}</strong>
+              <br /> {{desc_short}}
+              <br /> {{desc_extd}}
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+    {{/each}}
+  </script>
+  <!-- script src="https://cdn.appid.cloud.ibm.com/appid-0.3.0.min.js"></script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+</body>
+</html>
